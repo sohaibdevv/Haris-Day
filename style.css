@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light gray background */
+    position: relative;
+}
+
+.hero {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+
+@media (max-width: 460px) {
+.container {
+padding: 0 1.7rem;
+}
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #2d2e32; 
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.hero-img {
+    background-image: url('jpeg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 35rem;
+    position: relative;
+    width: 35rem;
+    margin-bottom: 2rem;
+    animation: morph 5s ease-in-out infinite;
+  }
+  
+  @keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-img {
+      width: 25rem;
+        height: 25rem;
+      margin-top: 3rem;
+       order: -1; /* Move image after text on mobile */
+    }
+   }
+    
+     @media (min-width: 769px) { /*For larger screens */
+        .hero-img {
+            order: 2; /* Keep image after text */
+        }
+    }
+
+    .journey {
+      background-color: #f9f9f9;
+      padding: 5rem 2rem; /* Reduce padding for smaller screens */
+    }
+    
+    @media screen and (max-width: 768px) { 
+      .container {
+        padding: 0 2rem; /* Reduce padding for smaller screens */
+      }
+    }
+    
+    @media screen and (max-width: 480px) { 
+      .container {
+        padding: 0 1rem;
+      }
+    }
+    
+    .journey {
+      color: #2d2e32;;
+      font-size: 2.6rem;
+      text-align: center;
+    }
+    
+    .img-journey {
+      display: flex;
+      justify-content: center; 
+    }
+    
+    .img-journey img {
+      border-radius: 1.7rem;
+      max-width: 50%;
+      height: auto; 
+      margin: 0 auto;
+      margin-top: 2rem;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #2d2e32;
+      padding: 5rem 0;
+      width: 100%;
+    }
+    
+    .container {
+      margin: 0 auto;
+      max-width: 107rem;
+      padding: 0 4rem;
+    }
+    
+    @media screen and (max-width: 768px) { 
+      .container {
+        padding: 0 2rem; 
+      }
+    }
+    
+    @media screen and (max-width: 460px) { 
+      .container {
+        padding: 0 1.7rem; 
+      }
+    }
+    
+    .footerb {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    footer h3 {
+      color: #fff;
+      font-size: 1.7rem;
+      flex: 1; 
+    }
+    
+    
+    @media screen and (max-width: 768px) {
+      .footerb {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 2rem; 
+      }
+    }

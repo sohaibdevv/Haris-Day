@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   background-color: #f0f0f0;
   position: relative;
-  overflow-x: hidden; /* Prevent horizontal overflow on body */
+  overflow-x: hidden; 
 }
 
 
@@ -44,9 +44,9 @@ h1 {
 p {
   font-size: 1.2em;
   color: #555;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
   text-align: center;
-  word-break: break-word;/*Added */
+  word-break: break-word;
 }
 
 .hero {

@@ -16,19 +16,20 @@ body {
   min-height: 100vh;
   background-color: #f0f0f0;
   position: relative;
+  overflow-x: hidden; /* Prevent horizontal overflow on body */
 }
 
 
 .container {
-margin: 0 auto;
-max-width: 107rem;
-padding: 0 4rem;
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
 }
 
 @media (max-width: 460px) {
-.container {
-padding: 0 1.7rem;
-}
+  .container {
+    padding: 0 1.7rem;
+  }
 }
 
 h1 {
@@ -37,6 +38,7 @@ h1 {
   color: #2d2e32;
   text-align: center;
   font-family: sans-serif;
+    word-break: break-word; /*Added */
 }
 
 p {
@@ -44,6 +46,7 @@ p {
   color: #555;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  word-break: break-word;/*Added */
 }
 
 .hero {
@@ -60,7 +63,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+    overflow-wrap: break-word; /* Added to fix the p tag overflow */
+  }
 
 .hero-img {
   background-image: url('haris.jpg');
@@ -69,42 +73,43 @@ p {
   background-size: cover;
   border: 3px solid #2d2e32;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  height: 35rem;
+  height: 25rem; 
   position: relative;
-  width: 35rem;
+  width: 25rem; 
   margin-bottom: 2rem;
   animation: morph 5s ease-in-out infinite;
-  flex: 0 1 35rem;
+  flex: 0 1 25rem; 
 } 
 
 @keyframes morph {
-0% {
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
 
-50% {
-  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-}
-
-100% {
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
-}
 
 @media (max-width: 768px) {
   .hero-img {
-    width: 25rem;
-      height: 25rem;
+    width: 20rem; /*Reduced image size at 768px*/
+    height: 20rem; /*Reduced image size at 768px*/
       margin-bottom: 1rem;
     order: -1;
   }
- }
-  
-   @media (min-width: 769px) {
-      .hero-img {
-          order: 2;
-      }
+}
+
+@media (min-width: 769px) {
+  .hero-img {
+    order: 2;
   }
+}
 
 /* Added for small screens */
 @media (max-width: 600px) {
@@ -112,93 +117,96 @@ p {
       width: 15rem;  /* Reduced image width */
       height: 15rem;  /* Reduced image height */
   }
+    .container{ /*Added to stop content overflowing*/
+    max-width: 100%;
+    }
 }
 
 /* Journey Section Styles */
-  .journey {
-    background-color: #f9f9f9;
-    padding: 5rem 2rem;
+.journey {
+  background-color: #f9f9f9;
+  padding: 5rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
   }
-  
-  @media screen and (max-width: 768px) { 
-    .container {
-      padding: 0 2rem;
-    }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
   }
-  
-  @media screen and (max-width: 480px) { 
-    .container {
-      padding: 0 1rem;
-    }
-  }
-  
-  .journey {
-    color: #2d2e32;
-    font-size: 2.6rem;
-    text-align: center;
-  }
-  
-  .img-journey {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .img-journey img {
-    border-radius: 1.7rem;
-    max-width: 50%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 2rem;
-    object-fit: cover;
-  }
+}
+
+.journey {
+  color: #2d2e32;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.img-journey {
+  display: flex;
+  justify-content: center;
+}
+
+.img-journey img {
+  border-radius: 1.7rem;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2rem;
+  object-fit: cover;
+}
 
 /* Footer Styles */
-  footer {
-    background-color: #2d2e32;
-    padding: 5rem 0;
-    width: 100%;
-  }
-  
+footer {
+  background-color: #2d2e32;
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+
+@media screen and (max-width: 768px) {
   .container {
-    margin: 0 auto;
-    max-width: 107rem;
-    padding: 0 4rem;
+    padding: 0 2rem;
   }
-  
-  @media screen and (max-width: 768px) { 
-    .container {
-      padding: 0 2rem; 
-    }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    padding: 0 1.7rem;
   }
-  
-  @media screen and (max-width: 460px) { 
-    .container {
-      padding: 0 1.7rem; 
-    }
-  }
-  
+}
+
+.footerb {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 1.7rem;
+  flex: 1;
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
   .footerb {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  footer h3 {
-    color: #fff;
-    font-size: 1.7rem;
-    flex: 1;
+    flex-direction: column;
     text-align: center;
-    font-family: 'Poppins',sans-serif; 
+    gap: 2rem;
   }
-  
-  
-  @media screen and (max-width: 768px) {
-    .footerb {
-      flex-direction: column;
-      text-align: center;
-      gap: 2rem;
-    }
-  }
+}
 
 @media (max-width: 600px) {
   h1 {
@@ -217,8 +225,8 @@ p {
       flex: 1 1 100%; /* Make text take full space*/
   }
   .hero-img {
-      width: 20rem;
-      height: 20rem;
+      width: 18rem;
+      height: 18rem;
       margin-bottom: 1rem;
   }
 

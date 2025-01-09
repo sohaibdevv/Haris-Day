@@ -67,7 +67,7 @@ p {
   }
 
 .hero-img {
-  background-image: url('haris.jpg');
+  background-image: url('../images/haris.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;

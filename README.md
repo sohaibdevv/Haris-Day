@@ -21,4 +21,4 @@ He was happy to see the benefits of my learning and he was impressed by how I ef
 He also mentioned that he is returning to Dubai soon, as his classes are starting. 🙂
 
 ## Haris' Audio Response:
-You can listen to **Haris' original 48-second response:** **[Here!](https://drive.google.com/file/d/13fQ7doK-2RZZyJ2wJG29qp1epaU19hVX/view?usp=sharing)**
+You can listen to **Haris' original 49-second response:** **[Here!](https://mcdn.podbean.com/mf/web/7e5xkjs2fkpj4r9p/Haris_Response_on_the_project9zefi.mp3)**

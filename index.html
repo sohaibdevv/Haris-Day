@@ -11,7 +11,7 @@
 
     <meta name="title" content="Haris Day">
     <meta name="description" content="A special card for Haris wishing him all the best!">
-    
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sohaibdevv.github.io/Haris-Day/">
     <meta property="og:title" content="Haris Day">
@@ -19,16 +19,17 @@
     <meta property="og:image" content="https://sohaibdevv.github.io/Haris-Day/images/haris.jpg">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
+
     <title>Haris Day</title>
-    
+
 </head>
 <body>
-    
+
     <div class="container">
-        <section class="hero">  
-                <div class="hero-content">  
-                <h1>For Haris</h1>
+        <section class="hero">
+                <div class="hero-content">
+                <h1 id="dynamic-message"></h1>
                 <p>
                     Wishing you a year filled with exciting discoveries, just as Albert Einstein himself undertook groundbreaking journeys in the realm of physics🚀.
                     <br><br>
@@ -39,7 +40,7 @@
                     ✨
                 </p>
             </div>
-            
+
             <div class="hero-img"></div>
         </section>
     </div>
@@ -51,14 +52,70 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
         <div class="container">
             <div class="footerb">
-                <h3>...and that's all folks! 😄</h3> 
+                <h3>...and that's all folks! 😄</h3>
             </div>
         </div>
     </footer>
-    
+        <script>
+        // Array of messages to cycle through
+        const messages = [
+            "For Haris",
+            "All the Best",
+            "Embrace the Journey!",
+            "Keep Exploring!",
+            "Shine Bright!"
+        ];
+
+        let messageIndex = 0; // Current index of the message to display from the 'messages' array
+        let charIndex = 0;    // Current index of the character being typed for the current message
+        const dynamicMessageElement = document.getElementById('dynamic-message'); // Get the H1 element
+
+        // Typing speed (milliseconds per character)
+        const typingSpeed = 100;
+        // Delay after a message is fully typed before starting the next one
+        const messageDisplayTime = 1500; // 1.5 seconds
+
+        /**
+         * Types out the current message character by character.
+         */
+        function typeMessage() {
+            const currentMessage = messages[messageIndex];
+
+            if (charIndex < currentMessage.length) {
+                // Append the next character
+                dynamicMessageElement.textContent += currentMessage.charAt(charIndex);
+                charIndex++;
+                // Continue typing after a short delay
+                setTimeout(typeMessage, typingSpeed);
+            } else {
+                // Message is fully typed, wait for a bit, then move to the next message
+                setTimeout(nextMessage, messageDisplayTime);
+            }
+        }
+
+        /**
+         * Resets for the next message and starts typing it.
+         */
+        function nextMessage() {
+            // Clear the current message
+            dynamicMessageElement.textContent = '';
+            charIndex = 0; // Reset character index for the new message
+
+            // Move to the next message in the array, loop back if at end
+            messageIndex = (messageIndex + 1) % messages.length;
+
+            // Start typing the new message
+            typeMessage();
+        }
+
+        // Start the typing effect when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            typeMessage(); // Start typing the first message
+        });
+    </script>
 </body>
 </html>

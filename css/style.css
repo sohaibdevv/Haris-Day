@@ -147,6 +147,8 @@ p {
   color: #2d2e32;
   font-size: 2.6rem;
   text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #c9d1ce;
 }
 
 .img-journey {

@@ -2,7 +2,7 @@
 ## Live Demo: [Here!](https://sohaibdevv.github.io/Haris-Day/)
 
 ## Description
-This repository contains the **HTML and CSS** code for a simple webpage created on **(January-6-2025)** to celebrate the start of a **new chapter** in **Haris sift's life.**
+This repository contains the **HTML, CSS, and JavaScript** code for a simple webpage created on **(January-6-2025)** to celebrate the start of a **new chapter** in **Haris sift's life.**
 </br></br>
 This **webpage** serves as a digital token of encouragement and support as he undertook on this exciting new journey of **self-discovery and personal growth.**
 

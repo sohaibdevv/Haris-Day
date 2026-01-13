@@ -17,16 +17,16 @@
   <li>Clean and minimalist design</li>
 </ul>
 
-<h2>Haris' Response ✔</h2>
+<h2>Haris' Response ✔ 🙂</h2>
 <p>
-  <b>Haris</b> was happy to see the webpage. 😄
+  <b>Haris</b> was happy to see the webpage. 
 </p>
 <p>
-  And he also appreciated me for creating this card on his <b>special day</b>. 🙂
+  And he also appreciated me for creating this card on his <b>special day</b>. 
 </p>
 <p>
-  He was <b>happy</b> to see the benefits of my learning and he was impressed by how I effectively used my <b>computing skills</b>. 🙂
+  He was <b>happy</b> to see the benefits of my learning and he was impressed by how I effectively used my <b>computing skills</b>.
 </p>
 <p>
-  He also mentioned that he is returning to Dubai soon, as his classes are starting. 🙂
+  He also mentioned that he is returning to Dubai soon, as his classes are starting.
 </p>

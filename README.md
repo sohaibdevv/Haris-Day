@@ -4,10 +4,10 @@
 
 <h2>Description</h2>
 <p>
-  This repository contains the <b>HTML, CSS, and JavaScript</b> code for a simple webpage created on <b>(January-6-2025)</b> to celebrate the start of a <b>new chapter</b> in <b>Haris sift's life</b>.
+  This repository contains the <b>HTML, CSS, and JavaScript</b> code for a simple webpage created on <b> January 6, 2025 </b> to celebrate the start of a <b>new chapter</b> in <b>Haris Sift's life</b>.
 </p>
 <p>
-  This <b>webpage</b> serves as a digital token of encouragement and support as he undertook on this exciting new journey of <b>self-discovery and personal growth</b>.
+  This <b>webpage</b> serves as a digital token of encouragement and support as he undertakes this exciting new journey of <b>self-discovery and personal growth</b>.
 </p>
 
 <h2>Features 🙂</h2>
